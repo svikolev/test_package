@@ -22,14 +22,20 @@ if __name__ == '__main__':
 
     from test_folder2 import test_file2 as tf2
     tf2.print_statement2()
-
     tf1.call_tf2_print()
 
     tf1.call_tf3_print()
 
+    import test_folder3 as t_folder3
+
+    print(dir(t_folder3))
+    #print(dir(test_folder3))
 
 
 
+    import test_folder1 as t_folder1
+    import test_folder1.t_file2
+    print(dir(t_folder1))
 
 
 
